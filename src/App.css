@@ -7,7 +7,7 @@ body, html {
 }
 
 .App {
-	margin: 0 3em;
+	margin: 0 1rem;
 	height: 100%;
 	background-color: white;
 }
@@ -18,6 +18,13 @@ body, html {
 
 .App-nav {
 	margin-bottom: 2em;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.img{
+	height: '272px';
 }
 
 .App-nav a {
@@ -51,4 +58,37 @@ body, html {
   
   #customers tr:nth-child(even){background-color: #f2f2f2;}
   
-  
+  a{
+	font-size: 2rem;
+	font-weight: bold;
+  }
+  .img {
+	width:80% !important;
+  }
+  @media screen and (max-width: 1552px) {
+	.img {
+	  width:80% !important;
+	}
+	
+  }
+  @media screen and (max-width: 800px) {
+	
+	.permachine{
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	h1,span,b{
+		font-size: small;
+	}
+	button{
+		font-size: small !important;
+
+	}
+	.secondcol{
+		width: 90% !important;
+	}
+	.firstcol{
+		width: 90% !important; 
+	}
+  }

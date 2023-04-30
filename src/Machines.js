@@ -49,22 +49,21 @@ fetch(`http://localhost:8081/machines/${perData.id}`, requestOptions)
 		}
 	}
 	return(
-		<div style={{display:'flex',gap:'2rem'}}>
-			<span onClick={()=>setPerData({	id:''})}>Back</span>
-			<div style={{width:'50%'}}>
+		<div className='permachine' style={{display:'flex',gap:'2rem'}}>
+			<div style={{width:'50%'}} className='firstcol'>
 			<h1>{perData.name}</h1>
 			<h1>Update Device</h1>
-			<div style={{width:'400px'}}>
+			<div >
 			<div style={{display:'flex',flexDirection:'column'}}>
 			<label htmlFor="">Name:</label>
 				<input type="text" value={value} onChange={(e)=>setValue(e.target.value)} name="" style={{padding:'0.5rem'}} id="" />
 			</div>
 				<div style={{display:'flex',padding:'1rem 0',justifyContent:'end'}}>
-				<button onClick={hanlderSubmit}>Submit</button>
+				<button style={{padding:'10px',fontSize:'1rem'}} onClick={hanlderSubmit}>Submit</button>
 				</div>
 			</div>
 			</div>
-			<div style={{width:'50%'}}>
+			<div style={{width:'50%'}} className='secondcol'>
 				<div style={{backgroundColor:'#dddddd',padding:'0 2rem',paddingBottom:'2rem',border:'2px solid black',}}>
 					<h1 style={{textAlign:'center'}}>{perData.health}</h1>
 					<div className="" style={{border:'1px solid black',height:'30px'}}>
