@@ -1,0 +1,54 @@
+body, html {
+	height: 100%;
+}
+
+#root {
+	height: 100%;
+}
+
+.App {
+	margin: 0 3em;
+	height: 100%;
+	background-color: white;
+}
+
+.App-header {
+	text-align: center;
+}
+
+.App-nav {
+	margin-bottom: 2em;
+}
+
+.App-nav a {
+	text-decoration: none;
+	color: #36459b;
+	margin: 0 1em;
+}
+
+.App-nav a:hover {
+	text-decoration: underline;
+}
+
+.App-nav a:first-child {
+	margin-left: 0;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+#customers {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  #customers td {
+	border: 1px solid black;
+	padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  
